@@ -90,10 +90,11 @@ The device features an integrated power management system designed to minimize v
 ### Power States and Timers
 | State Name | Description | Timer | Power consumption |
 | ---------- | ----------- | ----- | ----------------  |
-| Full Power |Active while the device is in motion | N/A | ~1500ma @ 13V |
-| Brightess Dimmed | Screen brightness reduced to 20% | 5 min | 300mA @ 13V
-| Screen Standy | Screen off | 30 min | 200mA @ 13V
-| Shutdown | The brightness of the display is reduced to 20% | 2 hours | < 100μA @ 13V
+| Full Power |Active while the device is in motion, 100% Brightness| N/A | ~1500mA/h @ 13V |
+| Full Power |Active while the device is in motion, 60% Brightness| N/A | ~600mA/h @ 13V |
+| Brightess Dimmed | Screen brightness reduced to 20% | 5 min | 300mA/h @ 13V
+| Screen Standy | Screen off | 30 min | 200mA/h @ 13V
+| Shutdown | The brightness of the display is reduced to 20% | 2 hours | < 100μA/h @ 13V
 
 >All timers start when a steady state is detected.
 
