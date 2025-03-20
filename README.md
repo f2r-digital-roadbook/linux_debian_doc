@@ -94,7 +94,7 @@ The device features an integrated power management system designed to minimize v
 | Full Power |Active while the device is in motion, 60% Brightness| N/A | ~600mA/h @ 13V |
 | Brightess Dimmed | Screen brightness reduced to 20% | 5 min | 300mA/h @ 13V
 | Screen Standy | Screen off | 30 min | 200mA/h @ 13V
-| Shutdown | The brightness of the display is reduced to 20% | 2 hours | < 100μA/h @ 13V
+| Shutdown | Deive is turned off | 2 hours | < 100μA/h @ 13V
 
 >All timers start when a steady state is detected.
 
