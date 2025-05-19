@@ -2,12 +2,33 @@
 
 This repository provides essential documentation for using **Armbian-unofficial 25.05.0 F2r-y1000 bookworm.**
 
+
+## Update to last version
+
+```bash
+curl -O --output-dir /tmp https://raw.githubusercontent.com/f2r-digital-roadbook/linux_debian_doc/refs/heads/main/gamma1000d_1.0.2_arm64.deb
+
+sudo apt install /tmp/gamma1000d_1.0.2_arm64.deb
+
+```
+
+## Change log
+
+
+| Version | Changes | Date
+|---------|--------|--------
+|gamma1000d_1.0.2         |  Fixes:      | 2025/05/19
+| |- Sometimes the screen doesn't wakup from slee
+| |- After 10 minutes, even in motion the screen goes black |
+|gamma1000d_1.0.1         |  Fix - Screen backlight low until rotate the brightness knob    |
+|gamma1000d_1.0.0         |  Initial release    |
+
 ## Linux default user password 
 
-- User: `anube`
-- Pass: `anube`
+- User: `*****`
+- Pass: `*****`
 
-- Root Password: `anube`
+- Root Password: `*****`
 
 
 > [!WARNING] > Security Notice: It is highly recommended to change the default passwords after the initial setup to enhance system security.
@@ -20,7 +41,7 @@ Instructions for building and flashing the Armbian image will be available soon.
  
 - The default screen rotation is set to portrait, see (`/boot/armbianEnv.txt`)
 - Integrated functionalities:
-    - The `gamma1000d_1.0.0_arm64.deb` installed by default.
+    - The `gamma1000d_1.0.2_arm64.deb` installed by default.
     - Power button supports shutdown and startup
     - Dimmer push button:
         - **Long press:** Activates screen standby
@@ -29,14 +50,14 @@ Instructions for building and flashing the Armbian image will be available soon.
 
 # Debian package Installation
 
-## Instalation of `gamma1000d_1.0.0_arm64.deb`
+## Instalation of `gamma1000d_1.0.2_arm64.deb`
 
 
-Installing `gamma1000d_1.0.0_arm64.deb`
+Installing `gamma1000d_1.0.2_arm64.deb`
 
 To install the Debian package, use the following command:
 ```bash
-sudo apt install -y ./gamma1000d_1.0.0_arm64.deb
+sudo apt install -y ./gamma1000d_1.0.2_arm64.deb
 ```
 ## System Modifications Made by This Package
 
